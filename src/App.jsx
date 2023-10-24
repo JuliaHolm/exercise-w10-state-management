@@ -1,3 +1,9 @@
+import { ToggleLight } from "./components/ToggleLight";
+
 export const App = () => {
-  return <div className="App">Hello Coders!</div>;
+  return (
+    <>
+      <ToggleLight />
+    </>
+  );
 };

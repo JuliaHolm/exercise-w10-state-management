@@ -27,14 +27,9 @@ npm i && code . && npm run dev
 2.  **State Management with Zustand**
     - When setting up your Zustand store, think of it as a global state container. It should hold all the tasks and provide functions to manipulate them. Follow the naming conventions when you create folders and files. Have a look at the [boilerplate](https://github.com/Technigo/react-zustand-boiler-plate) if you need guidance.
     - The `create` function from Zustand is your starting point. It accepts a setter function to help you define the state and its updater functions.
-    
-    **Theme Management with `useContext`**
-    - The `useContext` hook in React allows you to access values from a context without prop-drilling. For this exercise, you're using it to manage a theme (light/dark mode).
-    - Define a context using `createContext()`. Remember to export both the context and a custom hook (e.g., `useTheme`) to make it easier to access the theme in your components. Follow the naming conventions when you create folders and files. Have a look at the [boilerplate](https://github.com/Technigo/react-vite-use-context-boiler-plate) if you need guidance.
 
 3.  **Integrating Components**
-    - In your main `App.jsx`, integrate both the task manager and theme toggler. This is where you'll see the interplay of Zustand and `useContext`.
-    - Ensure that the `ThemeProvider` wraps your entire application so that the theme context is accessible everywhere.
+    - In your main `App.jsx`, integrate both the task manager and theme toggler. This is where you'll see the interplay of Zustand.
 
 4.  **Testing**
     - Before pushing to GitHub, test your application thoroughly. Add tasks, remove them, and toggle the theme. Ensure everything works seamlessly.
